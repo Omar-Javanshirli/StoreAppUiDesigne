@@ -123,6 +123,7 @@
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
             </Canvas>
+            <Image Grid.Column="1" Source="Image/store6.png" Width="700"/>
         </Grid>
     </Grid>
 </Window>
