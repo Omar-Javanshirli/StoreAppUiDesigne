@@ -125,6 +125,10 @@
             </Canvas>
             <Canvas Grid.Column="1">
                 <Image Grid.Column="1" Source="Image/store6.png" Width="600" Canvas.Top="40"/>
+                <Button Style="{StaticResource  myButton}" Canvas.Top="163" Width="70" Height="30"
+                        Canvas.Left="30" Background="#E6EDEF">
+                    <TextBlock Text="Buy" FontSize="20" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
+                </Button>
             </Canvas>
         </Grid>
     </Grid>
