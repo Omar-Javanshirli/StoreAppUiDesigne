@@ -40,7 +40,7 @@
 
             <Image Canvas.Left="1050" Canvas.Top="105" Source="Image/point.png"/>
 
-            <Border Canvas.Right="50" Width="350" Height="40" Canvas.Top="97" Background="White"
+            <Border Canvas.Right="50" Width="350" Height="40" Canvas.Top="100" Background="White"
                     BorderThickness="0" CornerRadius="20">
                 <Canvas>
                     <TextBlock Text="Search" FontSize="15" Canvas.Left="30" Canvas.Top="12" FontFamily="Georgia"
@@ -123,7 +123,9 @@
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
             </Canvas>
-            <Image Grid.Column="1" Source="Image/store6.png" Width="700"/>
+            <Canvas Grid.Column="1">
+                <Image Grid.Column="1" Source="Image/store6.png" Width="600" Canvas.Top="40"/>
+            </Canvas>
         </Grid>
     </Grid>
 </Window>
