@@ -1,6 +1,10 @@
-﻿using System;
+﻿using StoreAppUiDesigne.Model;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +24,30 @@ namespace StoreAppUiDesigne
     /// </summary>
     public partial class UserControl1 : UserControl
     {
+
+        public ObservableCollection<Product> Products { get; set; }
+
         public UserControl1()
         {
             InitializeComponent();
+            this.DataContext = this;
+
+            var products = new ObservableCollection<Product>
+            {
+                new Product
+                {
+                    Name="SSD",
+                    Price=180,
+                    Image="Image/ssd.jpg"
+                },
+                new Product
+                {
+                    Name="Ram",
+                    Price=100,
+                    Image="Image/ram.png"
+                }
+            };
         }
+
     }
 }

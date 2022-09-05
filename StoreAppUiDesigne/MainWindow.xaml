@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StoreAppUiDesigne"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1600" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="850" Width="1600" WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" Background="#E6EDEF" >
     <Grid>
         <Grid.RowDefinitions>

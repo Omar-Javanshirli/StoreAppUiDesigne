@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Product.cs" />
     <Compile Include="UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
@@ -127,6 +128,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\ssd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\ram.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
