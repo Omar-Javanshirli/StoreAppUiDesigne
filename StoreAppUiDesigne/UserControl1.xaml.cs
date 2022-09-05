@@ -25,28 +25,9 @@ namespace StoreAppUiDesigne
     public partial class UserControl1 : UserControl
     {
 
-        public ObservableCollection<Product> Products { get; set; }
-
         public UserControl1()
         {
             InitializeComponent();
-            this.DataContext = this;
-
-            var products = new ObservableCollection<Product>
-            {
-                new Product
-                {
-                    Name="SSD",
-                    Price=180,
-                    Image="Image/ssd.jpg"
-                },
-                new Product
-                {
-                    Name="Ram",
-                    Price=100,
-                    Image="Image/ram.png"
-                }
-            };
         }
 
     }

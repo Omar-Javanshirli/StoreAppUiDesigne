@@ -12,9 +12,9 @@
             <Button Canvas.Right="30" Canvas.Top="10" Style="{StaticResource myButton}">
                 <Image Source="Image/star.png" Width="20" Height="20" />
             </Button>
-            <Image Canvas.Left="55" Canvas.Top="50"/>
-            <Label Content="Name" Canvas.Top="110" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
-            <Label Content="Price" Canvas.Top="130" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
+            <Image Canvas.Left="55" Canvas.Top="50" x:Name="productImage"/>
+            <Label Content="Name" x:Name="nameLbl" Canvas.Top="110" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
+            <Label Content="Price" x:Name="priceLbl" Canvas.Top="130" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
             <Border Width="50" Height="50" Canvas.Left="90" Canvas.Top="120" CornerRadius="20" Background="#E6EDEF">
                 <Border CornerRadius="20" Background="White" Width="30" Height="30">
                     <Button Style="{StaticResource myButton}">
