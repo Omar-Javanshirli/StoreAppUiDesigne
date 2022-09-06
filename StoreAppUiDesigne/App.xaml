@@ -13,6 +13,7 @@
                 <ResourceDictionary Source="Mydictionary/ColorFullButton2.xaml"/>
                 <ResourceDictionary Source="MyDictionary/MyButtoon.xaml"/>
                 <ResourceDictionary Source="MyDictionary/MyListBox.xaml"/>
+                <ResourceDictionary Source="MyDictionary/ListViewStyles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
