@@ -1,10 +1,7 @@
 ﻿using StoreAppUiDesigne.Model;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,18 +14,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace StoreAppUiDesigne
+namespace StoreAppUiDesigne.UserCantrols
 {
     /// <summary>
-    /// Interaction logic for UserControl1.xaml
+    /// Interaction logic for AddUc.xaml
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class AddUc : UserControl
     {
-
-        public UserControl1()
+        public Product product { get; set; }
+        public AddUc(Product product)
         {
             InitializeComponent();
-        }
 
+            this.DataContext = this;
+            this.product = product;
+        }
     }
 }

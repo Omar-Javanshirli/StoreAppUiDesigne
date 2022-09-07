@@ -1,4 +1,5 @@
 ﻿using StoreAppUiDesigne.Model;
+using StoreAppUiDesigne.UserCantrols;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -34,7 +35,7 @@ namespace StoreAppUiDesigne
             }
         }
         public ObservableCollection<Product> Products { get; set; }
-
+        public ObservableCollection<AddUc> AddControls { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -56,6 +57,12 @@ namespace StoreAppUiDesigne
                     Image="Image/ram.png"
                 }
             };
+
+            foreach (var p in Products)
+            {
+                var addUc = new AddUc(p);
+                mywrappanel.Children.Add(addUc);
+            }
         }
 
     }

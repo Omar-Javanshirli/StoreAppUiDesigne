@@ -124,41 +124,14 @@
                 </Button>
             </Canvas>
             <Canvas Grid.Column="1">
-                <Image Grid.Column="1" Source="Image/store6.png" Width="600" Canvas.Top="40"/>
+                <Image Grid.Column="1" Source="Image/store6.png" Width="600" Canvas.Top="40" Canvas.Left="50"/>
                 <Button Style="{StaticResource myButton}" Canvas.Top="163" Width="70" Height="30"
-                        Canvas.Left="30" Background="#E6EDEF">
+                        Canvas.Left="60" Background="#E6EDEF">
                     <TextBlock Text="Buy" FontSize="20" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
                 </Button>
 
-                <ListView Grid.Column="1" Width="1050" Canvas.Top="240" Height="460"
-                          ItemsSource="{Binding Products}" x:Name="partProductListBox" Background="Transparent" BorderThickness="0"
-                          
-                          ItemContainerStyle="{StaticResource LvItemStyle}"
-                          >
-                    
-                    <ListView.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel Orientation="Horizontal" ></WrapPanel>
-                        </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Canvas Height="170" Width="140" Margin="5">
-                                <Border Width="120" Height="150" Background="White" BorderThickness="0" CornerRadius="20" x:Name="productBorder"/>
-                                <Image Canvas.Left="55" Canvas.Top="50" x:Name="productImage"/>
-                                <Label Content="{Binding Name}" x:Name="nameLbl" Canvas.Top="110" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
-                                <Label Content="{Binding Price}" x:Name="priceLbl" Canvas.Top="130" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
-                                <Border Width="50" Height="50" Canvas.Left="90" Canvas.Top="120" CornerRadius="20" Background="#E6EDEF">
-                                    <Border CornerRadius="20" Background="White" Width="30" Height="30">
-                                        <Button Style="{StaticResource myButton}">
-                                            <Image Source="Image/plus.png" Margin="5"/>
-                                        </Button>
-                                    </Border>
-                                </Border>
-                            </Canvas>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+                <WrapPanel Orientation="Horizontal" Name="mywrappanel" Grid.Column="1" Width="1100" Canvas.Top="200"
+                            Canvas.Left="-30"/>
             </Canvas>
         </Grid>
     </Grid>
