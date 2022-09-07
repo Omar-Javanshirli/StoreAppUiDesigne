@@ -58,80 +58,117 @@
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="1050"/>
+                <ColumnDefinition Width="950"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Canvas Grid.Column="0" x:Name="menuCanvas">
-                <Button Canvas.Top="60" Style="{StaticResource  myButton}" Width="{Binding ElementName=menuCanvas,Path=ActualWidth}">
+                <Button Canvas.Top="40" Style="{StaticResource  myButton}" Width="{Binding ElementName=menuCanvas,Path=ActualWidth}">
                     <Label Height="40"  Content="Proudcts"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic" />
                 </Button>
 
-                <Button Canvas.Top="120" Style="{StaticResource myButton}">
+                <Button Canvas.Top="100" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="All"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
 
-                <Button Canvas.Top="180" Style="{StaticResource myButton}">
+                <Button Canvas.Top="160" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="Bikes"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
 
 
-                <Button Canvas.Top="240" Style="{StaticResource myButton}">
+                <Button Canvas.Top="220" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="Frames"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
 
 
-                <Button Canvas.Top="300" Style="{StaticResource myButton}">
+                <Button Canvas.Top="280" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="Wheels"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
 
 
-                <Button Canvas.Top="360" Style="{StaticResource myButton}">
+                <Button Canvas.Top="340" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="Steering"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
 
 
-                <Button Canvas.Top="420" Style="{StaticResource myButton}">
+                <Button Canvas.Top="400" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="Clothing"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack" 
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
 
 
-                <Button Canvas.Top="480" Style="{StaticResource myButton}">
+                <Button Canvas.Top="460" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="Misc"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
 
 
-                <Button Canvas.Top="540" Style="{StaticResource myButton}">
+                <Button Canvas.Top="520" Style="{StaticResource myButton}">
                     <Label Width="{Binding ElementName=menuCanvas,Path=ActualWidth}" Height="40" Content="Seating"
                        HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" FontWeight="ExtraBlack"
                        FontFamily="Georgia" FontStyle="Italic"/>
                 </Button>
             </Canvas>
             <Canvas Grid.Column="1">
-                <Image Grid.Column="1" Source="Image/store6.png" Width="600" Canvas.Top="40" Canvas.Left="50"/>
-                <Button Style="{StaticResource myButton}" Canvas.Top="163" Width="70" Height="30"
-                        Canvas.Left="60" Background="#E6EDEF">
+                <Image Grid.Column="1" Source="Image/store6.png" Width="870" Canvas.Top="10" Canvas.Left="50"/>
+                <Button Style="{StaticResource myButton}" Canvas.Top="195" Width="70" Height="30"
+                        Canvas.Left="95" Background="#E6EDEF">
                     <TextBlock Text="Buy" FontSize="20" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
                 </Button>
 
-                <WrapPanel Orientation="Horizontal" Name="mywrappanel" Grid.Column="1" Width="1100" Canvas.Top="200"
+                <WrapPanel Orientation="Horizontal" Name="mywrappanel" Grid.Column="1" Width="975" Canvas.Top="245"
                             Canvas.Left="-30"/>
+            </Canvas>
+
+            <Canvas Grid.Column="2">
+                <Button Style="{StaticResource myButton}" Canvas.Left="220" Canvas.Top="150" Width="50" Height="50" Panel.ZIndex="10" Click="Button_Click">
+                    <Image Source="Image/play.png"/>
+                </Button>
+                <Border Canvas.Left="10"
+                        Canvas.Top="25"
+                        Width="auto"
+                        Height="auto"
+                        Margin="12,12,8,0"
+                        VerticalAlignment="Top"
+                        BorderBrush="#FF3B5998"
+                        BorderThickness=".5"
+                        CornerRadius="18">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="5"
+                              Opacity=".5"
+                              ShadowDepth="3" />
+                    </Border.Effect>
+                    <Border Name="ReceiverColor" BorderBrush="#FF96B2E4" BorderThickness="5" CornerRadius="15">
+                        <Grid>
+                            <Border Name="Mask"
+                                    Background="White"
+                                    BorderBrush="#FF3B5998"
+                                    BorderThickness=".5"
+                                    CornerRadius="13">
+                            </Border>
+                            <StackPanel>
+                                <Image Name="Receiver" Source="/Image/moto2.jpg" Width="445"/>
+                                <StackPanel.OpacityMask>
+                                    <VisualBrush Visual="{Binding ElementName=Mask}" />
+                                </StackPanel.OpacityMask>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </Border>
             </Canvas>
         </Grid>
     </Grid>

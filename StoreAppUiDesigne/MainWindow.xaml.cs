@@ -48,13 +48,13 @@ namespace StoreAppUiDesigne
                 {
                     Name="SSD",
                     Price=180,
-                    Image="Image/ssd.jpg"
+                    Image="/Image/ssd.jpg"
                 },
                 new Product
                 {
                     Name="Ram",
                     Price=100,
-                    Image="Image/ram.png"
+                    Image="/Image/ram.png"
                 }
             };
 
@@ -65,5 +65,9 @@ namespace StoreAppUiDesigne
             }
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

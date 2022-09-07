@@ -21,13 +21,13 @@ namespace StoreAppUiDesigne.UserCantrols
     /// </summary>
     public partial class AddUc : UserControl
     {
-        public Product product { get; set; }
+        public Product Product { get; set; }
         public AddUc(Product product)
         {
             InitializeComponent();
 
             this.DataContext = this;
-            this.product = product;
+            this.Product = product;
         }
     }
 }

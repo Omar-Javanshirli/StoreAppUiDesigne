@@ -25,14 +25,14 @@ namespace StoreAppUiDesigne.Model
         public string Name
         {
             get { return name; }
-            set { name = value; }
+            set { name = value; OnPropertyChanged(); }
         }
 
         private double price;
         public double Price
         {
             get { return price; }
-            set { price = value; }
+            set { price = value; OnPropertyChanged(); }
         }
 
         private string image;
@@ -40,7 +40,7 @@ namespace StoreAppUiDesigne.Model
         public string Image
         {
             get { return image; }
-            set { image = value; }
+            set { image = value; OnPropertyChanged(); }
         }
     }
 }
