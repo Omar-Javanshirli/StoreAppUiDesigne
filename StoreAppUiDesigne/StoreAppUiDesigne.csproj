@@ -158,5 +158,22 @@
   <ItemGroup>
     <Resource Include="Image\play.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\ram4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\benotto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\merkuuri.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\huffy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\benotto2.jpg" />
+    <Resource Include="Image\royal.jpg" />
+    <Resource Include="Image\royal2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

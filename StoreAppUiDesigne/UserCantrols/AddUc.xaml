@@ -9,7 +9,7 @@
     <Grid>
         <Canvas Margin="80">
             <Border Width="120" Height="150" Background="White" BorderThickness="0" CornerRadius="20" x:Name="productBorder"/>
-            <Image Canvas.Left="55" Canvas.Top="50" x:Name="productImage" Width="50" Height="50" Source="{Binding Product.Image,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+            <Image Canvas.Left="35" Canvas.Top="50" x:Name="productImage" Width="50" Height="50" Source="{Binding Product.Image,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
             <Label Content="{Binding Product.Name,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" x:Name="nameLbl" Canvas.Top="110" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
             <Label Content="{Binding Product.Price,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" x:Name="priceLbl" Canvas.Top="130" Canvas.Left="10" FontSize="10" FontFamily="Georgia" FontStyle="Italic" FontWeight="ExtraBlack"/>
             <Border Width="50" Height="50" Canvas.Left="90" Canvas.Top="120" CornerRadius="20" Background="#E6EDEF">

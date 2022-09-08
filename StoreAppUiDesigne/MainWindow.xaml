@@ -44,7 +44,7 @@
                     BorderThickness="0" CornerRadius="20">
                 <Canvas>
                     <TextBlock Text="Search" FontSize="15" Canvas.Left="30" Canvas.Top="12" FontFamily="Georgia"
-                               FontStyle="Italic" Foreground="Black"/>
+                               FontStyle="Italic" Foreground="Black" MouseEnter="TextBlock_MouseEnter" MouseLeave="searchTb_MouseLeave"  Name="searchTb" />
                     <Button Canvas.Right="30" Canvas.Top="10" Width="20" Height="20" BorderThickness="0" Background="Transparent">
                         <Image Source="Image/search48.png"/>
                     </Button>
@@ -169,6 +169,8 @@
                         </Grid>
                     </Border>
                 </Border>
+
+                <WrapPanel Orientation="Horizontal" Name="mywrappanel2" Width="495" Canvas.Top="245" Canvas.Left="-50"/>
             </Canvas>
         </Grid>
     </Grid>

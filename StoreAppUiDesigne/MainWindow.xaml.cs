@@ -35,6 +35,7 @@ namespace StoreAppUiDesigne
             }
         }
         public ObservableCollection<Product> Products { get; set; }
+        public ObservableCollection<Product> Products2 { get; set; }
         public ObservableCollection<AddUc> AddControls { get; set; }
         public MainWindow()
         {
@@ -54,8 +55,54 @@ namespace StoreAppUiDesigne
                 {
                     Name="Ram",
                     Price=100,
-                    Image="/Image/ram.png"
+                    Image="/Image/ram4.jpg"
                 }
+            };
+
+            Products2 = new ObservableCollection<Product>
+            {
+                new Product
+                {
+                    Name="Benotto",
+                    Price=1000,
+                    Image="/Image/benotto.jpg"
+                },
+
+                new Product
+                {
+                    Name="Merkuri",
+                    Price=200,
+                    Image="/Image/merkuuri.jpg"
+                },
+
+                new Product
+                {
+                    Name="Huffy",
+                    Price=500,
+                    Image="/Image/huffy.jpg"
+                },
+
+                new Product
+                {
+                    Name="RoyalBaby",
+                    Price=740,
+                    Image="/Image/royal.jpg"
+                },
+
+                new Product
+                {
+                    Name="Benotto",
+                    Price=349,
+                    Image="/Image/benotto2.jpg"
+                },
+
+                new Product
+                {
+                    Name="RoyalBaby",
+                    Price=421,
+                    Image="/Image/royal2.jpg"
+                },
+
             };
 
             foreach (var p in Products)
@@ -63,11 +110,29 @@ namespace StoreAppUiDesigne
                 var addUc = new AddUc(p);
                 mywrappanel.Children.Add(addUc);
             }
+
+            foreach (var p in Products2)
+            {
+                var addUc = new AddUc(p);
+                mywrappanel2.Children.Add(addUc);
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void TextBlock_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (searchTb.Text.ToString() == "Search") 
+                searchTb.Text=String.Empty;
+        }
+
+        private void searchTb_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (searchTb.Text.ToString() != String.Empty)
+                searchTb.Text = "Search";
         }
     }
 }
